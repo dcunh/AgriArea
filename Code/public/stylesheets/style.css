@@ -1,0 +1,108 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+
+
+.barramenu {
+height:111px;
+    border:1px solid grey;
+}
+
+.logomenu {
+  width: 131px;
+  float: left;
+}
+
+.logomenu > img {
+  width: 131px;
+}
+.menu {
+  float: right;
+
+}
+
+.menu > ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+
+}
+
+.menu > ul > li {
+  float: left;
+padding: 48px 33px;
+}
+
+
+
+.menu > ul > li a:hover {
+  background-color: #111111;
+}
+
+
+.carrossel > img {
+  width: 100%;
+
+}
+
+.carrossel {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.adubo {
+  width: 50%;
+  float: left;
+  
+}
+
+.linhas {
+  height:600px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.descricaodiretita {
+  width: 50%;
+  float: left;
+
+}
+
+.bichos > img {
+  width: 50%;
+  float: left;
+  
+}
+
+.descricaoesquerda {
+  width: 50%;
+  float: left;
+}
+
+footer {
+  height: 100px;
+  background-color: red;
+}
+
+.coluna-4{
+  width: 33%;
+  float: left;
+}
+
+.coluna-3{
+  width: 25%;
+  float: left;
+
+}
+
+.coluna-6{
+  width: 50%;
+  float: left;
+  background-color: white;
+}

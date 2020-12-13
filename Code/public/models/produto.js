@@ -1,6 +1,6 @@
 
 window.onload = async function() {
-    let idProduto = sessionStorage.getItem("idproduto");
+    let idProduto = sessionStorage.getItem("idProduto");
 
     let produto = await $.ajax({
         url: "/api/produto/"+idProduto,

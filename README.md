@@ -1,6 +1,6 @@
 ![AgriArea Logo](https://github.com/dcunh/alunos/blob/main/Icon/Agriarea.jpg)<br>
 **[Duarte - 50037188](https://github.com/dcunh)**
-<br>https://kertana.herokuapp.com/
+
 
 1. [Enquadramento](#Enquadramento)
 2. [Feature](#Feature)

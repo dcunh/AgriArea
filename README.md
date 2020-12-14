@@ -1,6 +1,6 @@
 ![AgriArea Logo](https://github.com/dcunh/alunos/blob/main/Icon/Agriarea.jpg)<br>
 **[Duarte - 50037188](https://github.com/dcunh)**<br>
-**[Aurelian - 50034501](https://github.com/IanoIe)**
+**[Aureliano - 50034501](https://github.com/IanoIe)**
 
 
 1. [Enquadramento](#Enquadramento)

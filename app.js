@@ -5,6 +5,8 @@ var logger = require('morgan');
 
 var produtosRouter = require('./routes/produtosRoutes');
 
+var servicosRouter = require('./routes/servicosRoutes');
+
 var app = express();
 
 app.use(logger('dev'));
@@ -14,5 +16,8 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/api/produtos',produtosRouter);
+
+app.use('/api/servicos', servicosRouter);
+
 
 module.exports = app;

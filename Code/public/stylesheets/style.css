@@ -5,8 +5,7 @@ body{
 a {
   color: #00B7FF;
 }
-/**---------------Botão-------------------*/
-
+/*-----------------------BOTÃO----------------------*/
 
 .tit3 > img{
   height: 80px;
@@ -19,6 +18,9 @@ a {
 background-image: 
 url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4'height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%23faf8fd' fill-opacity='1' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E");
 }
+
+/*-----------------------MENU----------------------*/
+
 .dropdown-content {
   display: none;
   position: absolute;
@@ -54,24 +56,6 @@ url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4'heigh
   justify-content: space-between;
   align-items: center;
 }
-
-/*----------------------logo-----------------------*/
-.logo {
-  height: 50px;
-  padding-left: 100px;
-}
-
-.logo > a{
-  display: block;
-  height: 100%;
-}
-
-.logo > a > img {
-  width: 50px;
-  max-height: 100%;
-  vertical-align: middle;
-}
-
 .menu {
   font-family: 'Montserrat', sans-serif;
   display: flex;
@@ -121,61 +105,33 @@ padding: 48px 33px;
   background-size: cover;
 }
 
-
-.adubo {
-  width: 50%;
-  float: left;
-  
-}
-
-.linhas {
-  height:600px;
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
-
-.descricaodiretita {
-  width: 50%;
-  float: left;
-
-}
-
-.bichos > img {
-  width: 50%;
-  float: left;
-  
-}
-
-.descricaoesquerda {
-  width: 50%;
-  float: left;
-}
-
 footer {
   height: 100px;
   background-color: green;
 }
 
-.coluna-4{
-  width: 33%;
-  float: left;
-}
-
-.coluna-3{
-  width: 25%;
-  float: left;
-
-}
-
-.coluna-6{
-  width: 50%;
-  float: left;
-  background-color: white;
-}
-
 * {box-sizing:border-box}
 
+/*-----------------------LOGO----------------------*/
+
+.logo {
+  height: 50px;
+  padding-left: 100px;
+}
+
+.logo > a{
+  display: block;
+  height: 100%;
+}
+
+.logo > a > img {
+  width: 50px;
+  max-height: 100%;
+  vertical-align: middle;
+}
+
 /*-----------------------REGISTO----------------------*/
+
 .Titulo-Registo {
   font-family: 'Montserrat', sans-serif;
   font-weight: 500;
@@ -187,8 +143,6 @@ footer {
   text-align: center;
   padding-top: 200px;
 }
-
-
 .bg1-pattern {
     background-image: url(../images/icons/pattern1.png);
     background-repeat: repeat;
@@ -205,7 +159,14 @@ footer {
  }
 
 
-/*----------------------ProcurarProduto------*/
+/*-----------------------PROCURARPRODUTO----------------------*/
+
+.bloc_left_price {
+  font-family: 'Nunito', sans-serif;
+  color: #ff0000;
+  text-align: center;
+
+}
 .Procurar-Produto {
   position: relative;
   max-width: 950px;
@@ -278,69 +239,4 @@ footer {
   transition: 0.6s ease;
   border-radius: 0 3px 3px 0;
   user-select: none;
-}
-
-/* Position the "next button" to the right */
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
-
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
-}
-
-/* Caption text */
-.text {
-  color: #f2f2f2;
-  font-size: 15px;
-  padding: 8px 12px;
-  position: absolute;
-  bottom: 8px;
-  width: 100%;
-  text-align: center;
-}
-
-/* Number text (1/3 etc) */
-.numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
-}
-
-/* The dots/bullets/indicators */
-.dot {
-  cursor: pointer;
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-}
-
-.active, .dot:hover {
-  background-color: #717171;
-}
-
-/* Fading animation */
-.fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
-
-@-webkit-keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
-}
-
-@keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
 }

@@ -8,6 +8,9 @@
   <link rel="stylesheet" href="/stylesheets/aboutus.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
   <link rel="icon" href="/images/bar.png" type="image/png" style="width: 10px; height: 15px;">
+<script src='https://api.mapbox.com/mapbox-gl-js/v2.0.0/mapbox-gl.js'></script>
+<link href='https://api.mapbox.com/mapbox-gl-js/v2.0.0/mapbox-gl.css' rel='stylesheet' />
+
 </head>
 
 <body>
@@ -33,8 +36,19 @@
             <ul style="margin: 10px;"><a href="comunidade.html"><b>Comunidade</b></a></ul>
             <ul style="margin: 10px;"><a href="contato"><b>Contato</b></a></ul>
             <ul style="margin: 10px;"><a href="registar.html"><b>Registo</b></a> </ul>
-          
+            <div id='map' style='width: 400px; height: 300px;'></div>
+           
       </div>
     </div>
   </div>
   </header>
+  <section>
+  <script>
+    mapboxgl.accessToken = 'pk.eyJ1Ijoic2NyMWJlIiwiYSI6ImNrams3N3hiMDR4ajcyeW5xZ3I2OWhjazIifQ.qeL_4tCfv1herp60XqWxRw';
+    var map = new mapboxgl.Map({
+    container: 'map',
+    style: 'mapbox://styles/mapbox/streets-v11'
+    });
+    </script>
+  </section>
+    </html>

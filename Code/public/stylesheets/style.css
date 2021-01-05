@@ -27,7 +27,13 @@ url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4'heigh
   border-radius: 30px;
   padding: 10px;
   }
-
+  .Titulo-Search{
+    margin-bottom: 25px;
+    padding-left: 370px;
+  }
+  .Titulo-Search2{
+    padding-left: 400px;
+    }
   .search_input{
   color: white;
   border: 0;

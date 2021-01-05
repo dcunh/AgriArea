@@ -4,8 +4,16 @@
 <head>
   <meta charset="utf-8">
   <title>AgriArea</title>
+  
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <link rel="stylesheet" href="/stylesheets/style.css">
+  <link rel="stylesheet" href="/stylesheets/aboutus.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+  <link rel="icon" href="/images/bar.png" type="image/png" style="width: 10px; height: 15px;">
+  <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+  <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
 </head>
 
 <body>
@@ -38,26 +46,19 @@
   </header>
     <section class="Registo-Img" style="background-image: url(images/Registar.jpg);">
     </section>
-    <section class="Procurar-Produto" id="app1" ng-app="directives" ng-controller="MyController">
-    
-        <form class="form-inline" role="form" ng-submit="submit()" action="" id="formSearcher"></form>
-          <div class="form-group" >
-            <h3>Qual o produto que procura?</h3>
-            <div id="listarProdutos"></div>
-          </div>
-          <div class="form-group">
-            <div class="input-group">
-              <label class="sr-only" for="searchInput" >Escreve um produto ou um composto: </label>
-              <input autocomplete="off" blur="validateModel()" ng-model="myModel" type="search"
-                class="form-control ng-pristine ng-valid ui-autocomplete-input" id="searchInput"
-                placeholder="Escreve um produto ou um composto">
-            </div>
-          </div>
-          <button type="submit">Procurar</button>
-          <input type="hidden" >
-          <input type="hidden" >
+  
+      <div class="container h-100" >
+      <div class="Titulo-Search2">
+        <h3>Qual o produto que procura?</h3>
       </div>
-    </section>
+        <div class="d-flex justify-content-center h-100">
+          <div class="searchbar">
+            <input class="search_input" type="text" name="" placeholder="Escreve um produto ou um composto:">
+            <a href="#" class="search_icon"><i class="fas fa-search"></i></a>
+          </div>
+        </div>
+      </div>
+      </section>
     <section class="adviceType analysisNews productNews CategoryAgricul " id="categorias-de-produtos">
                 <h3 class="sectionTitle"></h3>
                     <div class="fertilizante">

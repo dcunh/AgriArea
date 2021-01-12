@@ -7,124 +7,284 @@
   <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
   <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
   <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="js/chabot.js"></script>
+  <link href='https://fonts.googleapis.com/css?family=Quicksand&display=swap'>
   <link rel="stylesheet" href="/stylesheets/style.css">
   <link rel="stylesheet" href="/stylesheets/aboutus.css">
+  <link rel="stylesheet" href="/stylesheets/chatbot.css">
   <link rel="icon" href="/images/bar.png" type="image/png" style="width: 10px; height: 15px;">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
-
+  
 </head>
 
-<body>
+
 
   <header>
-    <div class="menu-header">
-      <div class="barramenu">
-        <div class="logo">
-          <a href="index.html"><img src="images/Logo.png"></a>
-        </div>
-        <div class="menu">
-            <ul style="margin: 10px;">Home</ul>
-            <ul style="margin: 10px;"><a href="sobrenos.html"><b>Sobre Nós</b></a></ul>
-            <div class="dropdown menu">
-              <ul style="margin: 10px;"><a href="produto.html"><b>Produto</b></a>
-                <div class="dropdown-content">
-                  <a href="produtos-fertiliizante.html">Fertilizantes</a>
-                  <a href="produtos-adubos.html">Adubos</a>
-                </div>
-            </div>
-            </ul>
-            <ul style="margin: 10px;"><a href="servico.html"><b>Serviço</b></a></ul>
-            <ul style="margin: 10px;"><a href="comunidade.html"><b>Comunidade</b></a></ul>
-            <ul style="margin: 10px;"><a href="registar.html"><b>Registo</b></a> </ul>
-          
-      </div>
-    </div>
-  </div>
-  </header>
-  <section class="background-img" style="background-image: url(images/Main.jpg);"> 
-    <div class="container h-100" style=" padding-top: 400px;">
-    <div class="Titulo-Search">
-      <h3>Qual o produto que procura?</h3>
-    </div>
-      <div class="d-flex justify-content-center h-100">
-        <div class="searchbar">
-          <input class="search_input" type="text" name="" placeholder="Escreve um produto ou um composto:">
-          <a href="#" class="search_icon"><i class="fas fa-search"></i></a>
-        </div>
-      </div>
-    </div>
-    </section>
-
-<section>
-  <img src="images/Logo.png" style="height: 80px; padding-left: 1000px; margin-top: 20px;">
-  <div class="aboutus-section">
+    <!--- Navbar --->
     
-  <div class="container">
-      <div class="row">
-          <div class="col-md-3 col-sm-6 col-xs-12">
-              <div class="aboutus">
-                  <h2 class="aboutus-title">Sobre Nós</h2>
-                  <p class="aboutus-text"></p>
-                  <p class="aboutus-text"></p>
-                  <a class="aboutus-more" href="sobrenos.html">Mais Informações
-                  </a>
-              </div>
+    <nav class="navbar navbar-expand-lg ">
+      <div class="container">
+        <a class="navbar-brand text-white" href="index.html" ><img src="images/bar.png" style="height : 20px" > </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nvbCollapse" aria-controls="nvbCollapse">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse " id="nvbCollapse">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item pl-1">
+              <a class="nav-link" href="index.html"><i class="fa fa-home fa-fw mr-1"></i>Início</a>
+            </li>
+            <li class="nav-item pl-1">
+              <a class="nav-link" href="sobrenos.html"><i class="fa fa-th-list fa-fw mr-1"></i>Sobre Nós</a>
+            </li>
+            <div class='dropdown menu'>
+              <li class="nav-item pl-1">
+              <a class="nav-link" href="produto.html"><i class="fa fa-info-circle fa-fw mr-1"></i>Produto</a>
+              <div class="dropdown-content">
+                <a href="produtos-fertiliizante.html">Adubos Sólidos</a>
+                <a href="produtos-adubos.html">Adubos Fertirrigação</a>
+                <a href="produtos-adubos.html">Adubos Foliares</a>
+                <a href="produtos-adubos.html">Produtos Industriais</a>
+            </div>
           </div>
-          <div class="col-md-3 col-sm-6 col-xs-12">
-              <div class="aboutus-banner">
-                  <img src="images/about.png" style="padding-left: 50px;width: 250px;">
-              </div>
-          </div>
-          <div class="col-md-5 col-sm-6 col-xs-12">
-              <div class="feature">
-                  <div class="feature-box">
-                      <div class="clearfix">
-                          <div class="iconset">
-                              <span class="glyphicon glyphicon-cog icon"></span>
-                          </div>
-                          <div class="feature-content">
-                              <h4>TRABALHAMOS COM O CORAÇÃO</h4>
-                              <p></p>
-                          </div>
-                      </div>
-                  </div>
-                  <div class="feature-box">
-                      <div class="clearfix">
-                          <div class="iconset">
-                              <span class="glyphicon glyphicon-cog icon"></span>
-                          </div>
-                          <div class="feature-content">
-                              <h4>SERVIÇOS CONFIÁVEIS</h4>
-                               <p></p>    </div>
-                      </div>
-                  </div>
-                  <div class="feature-box">
-                      <div class="clearfix">
-                          <div class="iconset">
-                              <span class="glyphicon glyphicon-cog icon"></span>
-                          </div>
-                          <div class="feature-content">
-                              <h4>APOIO PRESTÁVEL</h4>
-                              <p>    </div>
-                      </div>
-                  </div>
-              </div>
-          </div>
+            </li>
+            <li class="nav-item pl-1">
+              <a class="nav-link" href="servico.html"><i class="fa fa-phone fa-fw fa-rotate-180 mr-1"></i>Serviço</a>
+            </li>
+            <li class="nav-item pl-1">
+              <a class="nav-link" href="comunidade.html"><i class="fa fa-user-plus fa-fw mr-1"></i>Comunidade</a>
+            </li>
+            <li class="nav-item pl-1">
+              <a class="nav-link" href="registar.html"><i class="fas fa-address-card fa-fw mr-1"></i>Registo</a>
+            </li>
+          </ul>
+        </div>
       </div>
-  </div>
-</div></section>
-  <footer>
-    <div class="coluna-4">
-      <ul>
-        <li>Home</li>
-        <li>Produtos</li>
-        <li>Serviços</li>
-        <li>Apoio</li>
-      </ul>
-    </div>
+    </nav>
+<!--# Navbar #-->
+  </header>
 
-  </footer>
+
+<div class="background-img" style="background-image: url(images/Main.jpg);"></div>
+</div> 
+  <section class="about_one " data-v-854d2e4c="">
+    <div class="container" data-v-854d2e4c=""><div class="row" data-v-854d2e4c="">
+    <div class="col-xl-6 col-lg-6" data-v-854d2e4c="">
+    <div class="about1_img" data-v-854d2e4c="">
+      <div class="about1_shape_1" data-v-854d2e4c="">
+      </div> 
+      <img src="images/about-1-img-1.jpg" alt="About-Img" data-v-854d2e4c=""> 
+      <div class="about1_icon-box" data-v-854d2e4c="">
+        <div class="circle"  data-v-854d2e4c="">
+          <img src="images/sprout.png" style="height: 115px;
+          width: 115px;">
+          
+        </span>
+      </div>
+      </div> 
+      <div class="about_img_2" data-v-854d2e4c="">
+        <img src="images/about-1-img-2.jpg" alt="" data-v-854d2e4c="">
+      </div>
+    </div>
+  </div> 
+  <div class="col-xl-6 col-lg-6" data-v-854d2e4c="">
+    <div class="block-title text-left" data-v-854d2e4c="">
+      <p data-v-854d2e4c="" style="color: #5f8f55">Sobre a Agricultura</p> 
+      <h3 data-v-854d2e4c="">We’re leader in agriculture market</h3> 
+      
+    </div> 
+    <div class="about_content" data-v-854d2e4c="">
+      <div class="text" data-v-854d2e4c="">
+        <p data-v-854d2e4c="">There are many variations of passages of Lorem Ipsum available, but the majority have
+    suffered alteration in some form, by injected humour, or randomised words which
+    don't look even slightly believable.</p>
+  </div> 
+  <div class="about1_icon_wrap" data-v-854d2e4c="">
+    <div class="about1_icon_single" data-v-854d2e4c="">
+      <div class="about1_icon" data-v-854d2e4c="">
+
+        <img src="images/harvest.png" id="harvest" style="height: 50px;" >
+      </div> 
+      <p data-v-854d2e4c="">Growing Fruits and Vegetables</p>
+    </div> 
+    <div class="about1_icon_single" data-v-854d2e4c="">
+      <div class="about1_icon" data-v-854d2e4c="">
+        <img src="images/harvest1.png" id="harvest" style="height: 50px;" >
+      </div> 
+      <p data-v-854d2e4c="">Tips for Ripening your Fruits</p>
+    </div>
+  </div> 
+  <div class="bottom_text" data-v-854d2e4c="">
+    <p data-v-854d2e4c=""> If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't
+    anything embarrassing hidden in the middle of text.</p>
+  </div> 
+  <div class="about1__button-block" data-v-854d2e4c="">
+    <a class="aboutus-more " href="sobrenos.html" style="color:#592c18"><b>Mais Informações</b>
+    </a>
+  </div>
+</div>
+</div>
+</div>
+</div>
+  </section>
+<section class="service_one" data-v-9daeda22="">
+  <div class="container" data-v-9daeda22="">
+    <div class="block-title text-center" data-v-9daeda22="">
+      <p data-v-9daeda22="">What we do</p> 
+      <h3 data-v-9daeda22="">Products We Offer</h3> 
+      <div class="leaf" data-v-9daeda22="">
+        <img src="/assets/images/resources/leaf.png" alt="" data-v-9daeda22="">
+      </div>
+    </div>
+     <div class="row" data-v-9daeda22="">
+       <div class="col-xl-3 col-lg-3 col-md-6" data-v-9daeda22="">
+         <div class="service_1_single wow fadeInUp" data-v-9daeda22="">
+           <div class="content"  data-v-9daeda22="">
+             <h3 data-v-9daeda22="">Adubos<br data-v-9daeda22="">Sólidos</h3>
+              <p data-v-9daeda22="">Soluções sólidas especialmente concebidas para potenciar e proteger os nutrientes das culturas.</p>
+            </div> 
+            <div class="service_1_img" data-v-9daeda22="">
+              <a href="produtos-fertiliizante.html"><img src="images/fertilizanteSólido.png"  alt="Service Image" data-v-9daeda22="">
+               <div class="hover_box" data-v-9daeda22="">
+                 <a href="/service-detail" data-v-9daeda22="" class="">
+                <span class="icon-left-arrow" data-v-9daeda22="">
+                </span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div> 
+      <div class="col-xl-3 col-lg-3 col-md-6" data-v-9daeda22="">
+        <div data-wow-delay="300ms" class="service_1_single wow fadeInUp" data-v-9daeda22="">
+          <div class="content" data-v-9daeda22="">
+            <h3 data-v-9daeda22="">Adubos
+              <br data-v-9daeda22="">Fertirrigação</h3> 
+              <p data-v-9daeda22="">Produtos altamente solúveis adaptados e projectados para responder às necessidades nutricionais das culturas através das instalações de fertirrega.
+              </p>
+            </div> 
+            <div class="service_1_img" data-v-9daeda22="">
+              <img src="images/regando-plantas.png" alt="Service Image" data-v-9daeda22=""> 
+              <div class="hover_box" data-v-9daeda22="">
+                <a href="/service-detail" data-v-9daeda22="" class="">
+                  <span class="icon-left-arrow" data-v-9daeda22="">
+                  </span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div> 
+        <div class="col-xl-3 col-lg-3 col-md-6" data-v-9daeda22="">
+          <div data-wow-delay="600ms" class="service_1_single wow fadeInUp" data-v-9daeda22="">
+            <div class="content" data-v-9daeda22="">
+              <h3 data-v-9daeda22="">Adubos
+                <br data-v-9daeda22="">Foliares</h3>
+                 <p data-v-9daeda22="">Soluções liquidas foliares especialmente concebidas para responder às necessidades nutricionais mais específicas
+                  das culturas.</p>
+                </div> 
+                <div class="service_1_img" data-v-9daeda22="">
+                  <img src="images/crescer-planta.png" alt="Service Image" data-v-9daeda22=""> 
+                  <div class="hover_box" data-v-9daeda22="">
+                    <a href="/service-detail" data-v-9daeda22="" class="">
+                      <span class="icon-left-arrow" data-v-9daeda22="">
+                      </span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div> 
+            <div class="col-xl-3 col-lg-3 col-md-6" data-v-9daeda22="">
+              <div data-wow-delay="900ms" class="service_1_single wow fadeInUp" data-v-9daeda22="">
+                <div class="content" data-v-9daeda22="">
+                  <h3 data-v-9daeda22="">Produtos
+                  <br data-v-9daeda22="">Industriais</h3> 
+                  <p data-v-9daeda22="">Uma ampla gama de soluções químicas sólidas e líquidas adaptadas a necessidades específicas de natureza muito diferentes.</p>
+                </div> 
+                <div class="service_1_img" data-v-9daeda22="">
+                  <img src="images/factory.png" alt="Service Image" data-v-9daeda22=""> 
+                  <div class="hover_box" data-v-9daeda22="">
+                    <a href="/service-detail" data-v-9daeda22="" class="">
+                      <span class="icon-left-arrow" data-v-9daeda22="">
+                      </span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+</section>
+<div id="body"> 
+  <div id="chat-circle" class="btn btn-raised">
+        <div id="chat-overlay" ></div>
+        <p class="material-icons" ><b>Chat</b> </p>
+  </div>
+  
+<div class="chat-box">
+  <div class="chat-box-header">
+    <b>Chat</b>
+    <span class="chat-box-toggle"><p class="material-icons">x</p></span>
+  </div>
+  <div class="chat-box-body">
+    <div class="chat-box-overlay">   
+    </div>
+    <div class="chat-logs">
+     
+    </div><!--chat-log -->
+  </div>
+  <div class="chat-input">      
+    <form>
+      <input type="text" id="chat-input" placeholder="Digite Aqui ..."/>
+    <button type="submit" class="chat-submit" id="chat-submit"><p class="material-icons" ><b>Enviar</b></p></button>
+    </form>      
+  </div>
+</div>
+</body>
+<footer>
+  <div class="jumbotron jumbotron-fluid bg-secondary p-4 mt-5 mb-0">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4 cizgi">
+          <div class="card bg-secondary border-0">
+            <div class="card-body text-light text-center">
+              <h5 class="card-title text-white display-4" style="font-size:30px">AgriArea</h5>
+            <p class="d-inline lead">AgriArea © 2020<br>
+            <a href="#" class="text-light d-block lead">Site</a>
+            </p>
+
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4 cizgi">
+          <div class="card bg-secondary border-0">
+            <div class="card-body text-center">
+              <h5 class="card-title text-white display-4" style="font-size:30px"></h5>
+              <a class="text-light d-block lead" style="margin-left: -20px" href="#"><i class="fa fa-phone mr-2"></i>+351 000000000</a>
+              <a class="text-light d-block lead" href="agriarea@gmail.com"><i class="fa fa-envelope mr-2"></i>agriarea@gmail.com</a>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4">
+          <div class="card bg-secondary border-0">
+            <div class="card-body text-center">
+            <h5 class="card-title text-white display-4" style="font-size:30px"></h5>
+        
+                <a class="text-light" href="#"><i class="fa fa-facebook-square fa-fw fa-2x"></i></a>
+              
+                <a class="text-light" href="#"><i class="fa fa-twitter-square fa-fw fa-2x"></i></a>
+              
+                <a class="text-light" href="#"><i class="fa fa-instagram fa-fw fa-2x"></i></a>
+              
+                <a class="text-light" href="#"><i class="fa fa-linkedin fa-fw fa-2x"></i></a>
+              
+            </div>
+          </div>
+        </div>	
+      </div>
+    </div>
+  </div>
+</footer>
 
 </html>

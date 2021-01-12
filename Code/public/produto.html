@@ -19,31 +19,47 @@
 <body>
 
   <header>
-    <div class="menu-header">
-      <div class="barramenu">
-        <div class="logo">
-          <a href="index.html"><img src="images/Logo.png"></a>
-        </div>
-        <div class="menu">
-            <ul style="margin: 10px;">Home</ul>
-            <ul style="margin: 10px;"><a href="sobrenos.html"><b>Sobre Nós</b></a></ul>
-            <div class="dropdown menu">
-              <ul style="margin: 10px;"><a href="produto.html"><b>Produto</b></a>
-                <div class="dropdown-content">
-                  <a href="produtos-fertiliizante.html">Fertilizantes</a>
-                  <a href="produtos-adubos.html">Adubos</a>
-                </div>
+    <!--- Navbar --->
+    <nav class="navbar navbar-expand-lg">
+      <div class="container">
+        <a class="navbar-brand text-white" href="index.html" ><img src="images/bar.png" style="height : 20px" > </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nvbCollapse" aria-controls="nvbCollapse">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="nvbCollapse">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item pl-1">
+              <a class="nav-link" href="index.html"><i class="fa fa-home fa-fw mr-1"></i>Home</a>
+            </li>
+            <li class="nav-item  pl-1">
+              <a class="nav-link" href="sobrenos.html"><i class="fa fa-th-list fa-fw mr-1"></i>Sobre Nós</a>
+            </li>
+            <div class='dropdown menu'>
+              <li class="nav-item pl-1">
+              <a class="nav-link" href="produto.html"><i class="fa fa-info-circle fa-fw mr-1"></i>Produto</a>
+              <div class="dropdown-content">
+                <a href="produtos-fertiliizante.html">Adubos Sólidos</a>
+                <a href="produtos-adubos.html">Adubos Fertirrigação</a>
+                <a href="produtos-adubos.html">Adubos Foliares</a>
+                <a href="produtos-adubos.html">Produtos Industriais</a>
             </div>
-            </ul>
-            <ul style="margin: 10px;"><a href="servico.html"><b>Serviço</b></a></ul>
-            <ul style="margin: 10px;"><a href="comunidade.html"><b>Comunidade</b></a></ul>
-            <ul style="margin: 10px;"><a href="contato"><b>Contato</b></a></ul>
-            <ul style="margin: 10px;"><a href="registar.html"><b>Registo</b></a> </ul>
-          
+          </div>
+            </li>
+            <li class="nav-item pl-1">
+              <a class="nav-link" href="servico.html"><i class="fa fa-phone fa-fw fa-rotate-180 mr-1"></i>Serviço</a>
+            </li>
+            <li class="nav-item pl-1">
+              <a class="nav-link" href="comunidade.html"><i class="fa fa-user-plus fa-fw mr-1"></i>Comunidade</a>
+            </li>
+            <li class="nav-item pl-1">
+              <a class="nav-link" href="registar.html"><i class="fa fa-sign-in fa-fw mr-1"></i>Registo</a>
+            </li>
+          </ul>
+        </div>
       </div>
-    </div>
-  </div>
-  </header>
+    </nav>
+    <!--# Navbar #-->
+    </header>
     <section class="Registo-Img" style="background-image: url(images/Registar.jpg);">
     </section>
   
@@ -79,4 +95,50 @@
         </div>
       </div>
     </section>
+    <footer>
+      <div class="jumbotron jumbotron-fluid bg-secondary p-4 mt-5 mb-0">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4 cizgi">
+              <div class="card bg-secondary border-0">
+                <div class="card-body text-light text-center">
+                  <h5 class="card-title text-white display-4" style="font-size:30px">AgriArea</h5>
+                <p class="d-inline lead">AgriArea © 2020<br>
+                <a href="#" class="text-light d-block lead">Site</a>
+                </p>
+    
+                </div>
+              </div>
+            </div>
+            
+            <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4 cizgi">
+              <div class="card bg-secondary border-0">
+                <div class="card-body text-center">
+                  <h5 class="card-title text-white display-4" style="font-size:30px"></h5>
+                  <a class="text-light d-block lead" style="margin-left: -20px" href="#"><i class="fa fa-phone mr-2"></i>+351 000000000</a>
+                  <a class="text-light d-block lead" href="agriarea@gmail.com"><i class="fa fa-envelope mr-2"></i>agriarea@gmail.com</a>
+                </div>
+              </div>
+            </div>
+            
+            <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4">
+              <div class="card bg-secondary border-0">
+                <div class="card-body text-center">
+                <h5 class="card-title text-white display-4" style="font-size:30px"></h5>
+            
+                    <a class="text-light" href="#"><i class="fa fa-facebook-square fa-fw fa-2x"></i></a>
+                  
+                    <a class="text-light" href="#"><i class="fa fa-twitter-square fa-fw fa-2x"></i></a>
+                  
+                    <a class="text-light" href="#"><i class="fa fa-instagram fa-fw fa-2x"></i></a>
+                  
+                    <a class="text-light" href="#"><i class="fa fa-linkedin fa-fw fa-2x"></i></a>
+                  
+                </div>
+              </div>
+            </div>	
+          </div>
+        </div>
+      </div>
+    </footer>
 </html> 

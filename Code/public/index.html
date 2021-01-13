@@ -8,6 +8,8 @@
   <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
   <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="js/chabot.js"></script>
+  <script src="/js/listarServicos.js"></script> 
+  <script src="/js/dropServices.js"></script> 
   <link href='https://fonts.googleapis.com/css?family=Quicksand&display=swap'>
   <link rel="stylesheet" href="/stylesheets/style.css">
   <link rel="stylesheet" href="/stylesheets/aboutus.css">
@@ -67,7 +69,52 @@
 
 
 <div class="background-img" style="background-image: url(images/Main.jpg);"></div>
-</div> 
+
+<div class="container">
+    <div class="row pt-1 pb-1">
+    </div>
+</div>
+<section>
+    <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
+        <div class="carousel-inner">
+        </div>
+    </div>
+</section>
+<section class="search-sec">
+  <div class="block-title text-center" data-v-854d2e4c="">
+    <p data-v-854d2e4c="" style="color: #5f8f55">Sobre AgriArea</p> 
+    <h1 data-v-854d2e4c="" style="color: #592c18;"><b>Escolha o seu Serviço</b></h1> 
+    
+  </div> 
+    <div class="container">
+     
+       
+  
+        <form action="#" method="post" novalidate="novalidate">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="row">
+                        <div class="col-lg-3 col-md-3 col-sm-12 p-0">
+                            <input type="text" class="form-control search-slt" placeholder="Nome Completo">
+                        </div>
+                        <div class="col-lg-3 col-md-3 col-sm-12 p-0">
+                            <input type="text" class="form-control search-slt" placeholder="Cidade">
+                        </div>
+                        <div class="col-lg-3 col-md-3 col-sm-12 p-0">
+                          <input type="date" class="form-control search-slt" placeholder="Data">
+                      </div>
+                        <div class="col-lg-3 col-md-3 col-sm-12 p-0">
+                              <div id="dropDownServico"></div>
+                        </div>
+                        <div class="p-0 btn-lg btn-block ">
+                            <button type="button" class="btn btn-success wrn-btn">Search</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</section>
   <section class="about_one " data-v-854d2e4c="">
     <div class="container" data-v-854d2e4c=""><div class="row" data-v-854d2e4c="">
     <div class="col-xl-6 col-lg-6" data-v-854d2e4c="">

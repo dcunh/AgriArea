@@ -6,8 +6,13 @@
   <title>AgriArea</title>
   
 <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <link rel="stylesheet" href="/stylesheets/style.css">
-  <link rel="stylesheet" href="/stylesheets/aboutus.css">
+<link rel="stylesheet" href="/stylesheets/style.css">
+<link rel="stylesheet" href="/stylesheets/aboutus.css">
+<link rel="stylesheet" href="/stylesheets/chatbot.css">
+<link rel="stylesheet" href="/stylesheets/produto.css">
+<script src="js/chabot.js"></script>
+  <script src="/js/listarProdutos.js"></script> 
+  
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
@@ -29,7 +34,7 @@
         <div class="collapse navbar-collapse" id="nvbCollapse">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item pl-1">
-              <a class="nav-link" href="index.html"><i class="fa fa-home fa-fw mr-1"></i>Home</a>
+              <a class="nav-link" href="index.html"><i class="fa fa-home fa-fw mr-1"></i>Início</a>
             </li>
             <li class="nav-item  pl-1">
               <a class="nav-link" href="sobrenos.html"><i class="fa fa-th-list fa-fw mr-1"></i>Sobre Nós</a>
@@ -52,7 +57,7 @@
               <a class="nav-link" href="comunidade.html"><i class="fa fa-user-plus fa-fw mr-1"></i>Comunidade</a>
             </li>
             <li class="nav-item pl-1">
-              <a class="nav-link" href="registar.html"><i class="fa fa-sign-in fa-fw mr-1"></i>Registo</a>
+              <a class="nav-link" href="registar.html"><i class="fa fa-address-card fa-fw mr-1"></i>Registo</a>
             </li>
           </ul>
         </div>
@@ -60,41 +65,146 @@
     </nav>
     <!--# Navbar #-->
     </header>
-    <section class="Registo-Img" style="background-image: url(images/Registar.jpg);">
-    </section>
-  
-      <div class="container h-100" >
-      <div class="Titulo-Search2">
-        <h3>Qual o produto que procura?</h3>
+    <body>
+      <section class="Registo-Img" style="background-image: url(images/Registar.jpg);">
+      </section>
+    <section class="productSearch  ng-scope" id="app1" ng-app="directives" ng-controller="MyController">
+      <div class="container">
+              <div class="form-group text-center ">
+                <h1 data-v-854d2e4c="" style="color: #592c18">Escolha o seu Produto</h1> 
+              </div>
+              <form action="" name="store" id="store" method="get" novalidate="novalidate" style="padding-left: 200px;">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="row">
+                            <div class="col-lg-3 col-md-3 col-sm-12 p-0">
+                                <input type="text" class="form-control search-slt" placeholder="Escreva um Produto">
+                            </div>
+                            <div class="col-lg-3 col-md-3 col-sm-12 p-0">
+                                  <div id="listarProdutos"></div>
+                            </div>
+                            <div class="col-lg-3 col-md-3 col-sm-12 p-0 ">
+                                <button type="submit" class="btn btn-success wrn-btn">Search</button>
+                            </div>
+          </form>
+          <script>
+            document.getElementById("listarProdutos").onchange = function() {
+                    window.location.href = "index.html";
+            };
+        </script>
       </div>
-        <div class="d-flex justify-content-center h-100">
-          <div class="searchbar">
-            <input class="search_input" type="text" name="" placeholder="Escreve um produto ou um composto:">
-            <a href="#" class="search_icon"><i class="fas fa-search"></i></a>
+  </section>
+    <section class="service_one" data-v-9daeda22="">
+      <div class="container" data-v-9daeda22="">
+        <div class="block-title text-center" data-v-9daeda22="">
+          <p data-v-9daeda22="">What we do</p> 
+          <h3 data-v-9daeda22="">Products We Offer</h3> 
+          <div class="leaf" data-v-9daeda22="">
           </div>
         </div>
-      </div>
-      </section>
-    <section class="adviceType analysisNews productNews CategoryAgricul " id="categorias-de-produtos">
-                <h3 class="sectionTitle"></h3>
-                    <div class="fertilizante">
-                                <a href="produtos-fertiliizante.html" class="prodImg" style="width:auto;height:auto;">
-                                    <img class="fertilizante1" alt="" src="images/fertilizante.png" style="display: inline;">
-                                </a><br>
-                                 <a href="produtos-fertiliizante.html" class="Titulo-Fertilizante" ><p><b>Fertilizante</b></p></a>
-                                 <p><span style="font-size: 12pt;">Soluções sólidas&nbsp;especialmente concebidas&nbsp;para potenciar e proteger os nutrientes das culturas.</span></p>
-                                </div>
-                    <div class="Adubo">
-                                <a href="/pt/agricultura/produtos/categorias/fertirrigação/" class="prodImg" style="width:auto;height:auto;">
-                                    <img class="adubo1" alt="" src="images/broto.png" style="display: inline;">
-                                </a><br>
-                              <a href="/pt/agricultura/produtos/categorias/fertirrigação/" class="plantTitle titleHeight colorText-grisOscuro" style="width: 175px; margin:0 auto; margin-bottom: 16px;"><p><b>Adubos&nbsp;Fertirrigação</b></p></a>
-                              <p><span style="font-size: 12pt;">Produtos altamente solúveis adaptados e projectados para responder às necessidades nutricionais das culturas através das instalações de fertirrega.</span></p>
-                             <a href="/pt/agricultura/produtos/categorias/fertirrigação/" class="button-more"><span class="icon icon-40masinfo colorText-grisOscuro colorText-hover-grisOscuro"></span></a>
-        </div>
-        </div>
-      </div>
+         <div class="row" data-v-9daeda22="">
+           <div class="col-xl-3 col-lg-3 col-md-6" data-v-9daeda22="">
+             <div class="service_1_single wow fadeInUp" data-v-9daeda22="">
+               <div class="content"  data-v-9daeda22="">
+                 <h3 data-v-9daeda22="">Adubos<br data-v-9daeda22="">Sólidos</h3>
+                  <p data-v-9daeda22="">Soluções sólidas especialmente concebidas para potenciar e proteger os nutrientes das culturas.</p>
+                </div> 
+                <div class="service_1_img" data-v-9daeda22="">
+                  <a href="produtos-fertiliizante.html"><img src="images/fertilizanteSólido.png"  alt="Service Image" data-v-9daeda22="">
+                   <div class="hover_box" data-v-9daeda22="">
+                     <a href="/service-detail" data-v-9daeda22="" class="">
+                    <span class="icon-left-arrow" data-v-9daeda22="">
+                    </span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div> 
+          <div class="col-xl-3 col-lg-3 col-md-6" data-v-9daeda22="">
+            <div data-wow-delay="300ms" class="service_1_single wow fadeInUp" data-v-9daeda22="">
+              <div class="content" data-v-9daeda22="">
+                <h3 data-v-9daeda22="">Adubos
+                  <br data-v-9daeda22="">Fertirrigação</h3> 
+                  <p data-v-9daeda22="">Produtos altamente solúveis adaptados e projectados para responder às necessidades nutricionais das culturas através das instalações de fertirrega.
+                  </p>
+                </div> 
+                <div class="service_1_img" data-v-9daeda22="">
+                  <img src="images/regando-plantas.png" alt="Service Image" data-v-9daeda22=""> 
+                  <div class="hover_box" data-v-9daeda22="">
+                    <a href="/service-detail" data-v-9daeda22="" class="">
+                      <span class="icon-left-arrow" data-v-9daeda22="">
+                      </span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div> 
+            <div class="col-xl-3 col-lg-3 col-md-6" data-v-9daeda22="">
+              <div data-wow-delay="600ms" class="service_1_single wow fadeInUp" data-v-9daeda22="">
+                <div class="content" data-v-9daeda22="">
+                  <h3 data-v-9daeda22="">Adubos
+                    <br data-v-9daeda22="">Foliares</h3>
+                     <p data-v-9daeda22="">Soluções liquidas foliares especialmente concebidas para responder às necessidades nutricionais mais específicas
+                      das culturas.</p>
+                    </div> 
+                    <div class="service_1_img" data-v-9daeda22="">
+                      <img src="images/crescer-planta.png" alt="Service Image" data-v-9daeda22=""> 
+                      <div class="hover_box" data-v-9daeda22="">
+                        <a href="/service-detail" data-v-9daeda22="" class="">
+                          <span class="icon-left-arrow" data-v-9daeda22="">
+                          </span>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div> 
+                <div class="col-xl-3 col-lg-3 col-md-6" data-v-9daeda22="">
+                  <div data-wow-delay="900ms" class="service_1_single wow fadeInUp" data-v-9daeda22="">
+                    <div class="content" data-v-9daeda22="">
+                      <h3 data-v-9daeda22="">Produtos
+                      <br data-v-9daeda22="">Industriais</h3> 
+                      <p data-v-9daeda22="">Uma ampla gama de soluções químicas sólidas e líquidas adaptadas a necessidades específicas de natureza muito diferentes.</p>
+                    </div> 
+                    <div class="service_1_img" data-v-9daeda22="">
+                      <img src="images/factory.png" alt="Service Image" data-v-9daeda22=""> 
+                      <div class="hover_box" data-v-9daeda22="">
+                        <a href="/service-detail" data-v-9daeda22="" class="">
+                          <span class="icon-left-arrow" data-v-9daeda22="">
+                          </span>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
     </section>
+    <div id="body"> 
+      <div id="chat-circle" class="btn btn-raised">
+            <div id="chat-overlay" ></div>
+            <p class="material-icons" ><b>Chat</b> </p>
+      </div>
+      
+    <div class="chat-box">
+      <div class="chat-box-header">
+        <b>Chat</b>
+        <span class="chat-box-toggle"><p class="material-icons">x</p></span>
+      </div>
+      <div class="chat-box-body">
+        <div class="chat-box-overlay">   
+        </div>
+        <div class="chat-logs">
+         
+        </div><!--chat-log -->
+      </div>
+      <div class="chat-input">      
+        <form>
+          <input type="text" id="chat-input" placeholder="Digite Aqui ..."/>
+        <button type="submit" class="chat-submit" id="chat-submit"><p class="material-icons" ><b>Enviar</b></p></button>
+        </form>      
+      </div>
+    </div>
+    </body>
     <footer>
       <div class="jumbotron jumbotron-fluid bg-secondary p-4 mt-5 mb-0">
         <div class="container">
@@ -141,4 +251,5 @@
         </div>
       </div>
     </footer>
+  </body>
 </html> 

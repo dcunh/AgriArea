@@ -1,0 +1,27 @@
+
+.productSearch {
+    position: relative;
+    max-width: 950px;
+    margin: 0 auto;
+}
+.productSearch .container {
+    max-width: 100%;
+    position: relative;
+    z-index: 2;
+    overflow: hidden;
+    background-color: #fff;
+    margin-top: -80px;
+    margin-bottom: 50px;
+    padding: 50px 55px;
+}
+
+
+.productSearch .btn.btn-search {
+    height: 60px;
+}
+.button.btn:not(.note-btn), input.btn {
+    font-family: "light";
+}
+button:not(.note-btn).btn, input.btn {
+    background-color: #026937;
+}
